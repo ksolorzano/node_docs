@@ -1,8 +1,11 @@
-var http = require('http');
+var filelist = require('./lyn_06_m.js');
 
-http.get(process.argv[2],function(response){
-  response.setEncoding('utf8');
-  response.on("data",function(data){
-    console.log(data);
-  })
+filelist(process.argv[2],process.argv[3],function(err,filearr){
+  if(err){
+    console.log(err);
+  }else{
+    for(i=0;i<filearr.length;i++){
+      console.log(filearr[i]);
+    }
+  }
 });

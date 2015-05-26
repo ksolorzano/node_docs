@@ -1,0 +1,32 @@
+{
+  "apis":[
+    {
+      "name":"content-api",
+      "jmx":"GET_content.jmx",
+      "csv":"GET_content.csv"
+    },
+    {
+      "name":"forecast-api",
+      "jmx":"GET_forecast.jmx",
+      "csv":"GET_forecast.csv"
+    },
+    {
+      "name":"google-api",
+      "jmx":"GET_Places_Autocomplete.jmx",
+      "csv":"GET_Places_Autocomplete.csv"
+    }
+  ],
+  "paths":{
+    "jmeter":"/jmeter/bin/jmeter.sh",
+    "tests":{
+      "local":"/Users/Kener/Documents/API/L.L.Bean/LLBean/apiproxies",
+      "git":""
+    }
+  },
+  "keys":{
+    "dev":"Hln0l7aAqbXVjHFNcpLHuBcWVQeSEW7i",
+    "qae":"Hln0l7aAqbXVjHFNcpLHuBcWVQeSEW7i",
+    "stage":"yQDFDbMvuZtPDlB8XuapM4vOdhZGVx4M",
+    "prod":"yQDFDbMvuZtPDlB8XuapM4vOdhZGVx4M"
+  }
+}
